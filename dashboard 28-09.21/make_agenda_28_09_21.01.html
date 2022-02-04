@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Agenda</title>
+        <!-- bootstrap 4 link  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jquery link  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- popper link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- javascript link  -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- font awesome link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+        <style>    
+        .file_icon {
+            font-size: -webkit-xxx-large;
+            color: aliceblue;
+            background: orangered;
+            border-radius: 50px;
+            width: 80px;
+            height: 80px;
+        }
+        .agenda_sr_no{  
+            font-size: small;
+            width: 20px;
+        
+        }
+        .discription{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-right: 0;
+            box-shadow: 1px 1px 3px 1px rgb(224, 223, 223);
+            }
+            .task_row_1{
+                height: 4vh;
+                
+            }
+            .set_icon{
+                top: 50px;
+            }
+        .task_row_1 .agenda_sr_no::before {
+            content: " ";
+            position: absolute;
+            left: 17px;
+            top: 0px;
+            width: 1px;
+            height: 100%;
+            background-color: #dc3545;
+
+
+        }
+        </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="agenda_container">
+                            <div class="agenda_container_head"></div>
+                            <div class="agenda_container_body"> 
+                                <div class="bg-dark d-flex justify-content-between m-2 p-2 px-3 rounded-pill text-light w-25">
+                                    
+                                    <h6 class="tetx_ajenda mb-0">AGENDA</h6>
+                                    <span><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="d-flex" style="    overflow-y: scroll;
+                                height: 200px;
+                            }">
+                                    <!-- <div class="col-md-2 icon_class">
+                                        <div class="position-relative set_icon top">
+                                            <div class="file_icon text-center">
+                                                <span><i class="fas fa-clipboard-list"></i></span>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-md-8 body_class p-0 ml-3 " style="height: 100%;">
+                                        <!-- 1st row  -->
+                                        <div class="align-items-center  d-flex justify-content-between mb-0 px-2 task_row_1">
+                                            <span class=" agenda_sr_no bg-danger rounded-circle text-center text-light">01</span>
+                                            <div class=" w-75">
+                                                    <p class="mb-0 discription px-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laborum.</p>
+                                            </div>
+                                            <span class=""><i class="fas fa-trash"></i></span>
+                                        </div>
+                                        <!-- 2nd row  -->
+                                        <div class="align-items-center  d-flex justify-content-between mb-0 px-2 task_row_1">
+                                            <span class=" agenda_sr_no bg-danger rounded-circle text-center text-light">01</span>
+                                            <div class=" w-75">
+                                                    <p class="mb-0 discription px-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laborum.</p>
+                                            </div>
+                                            <span class=""><i class="fas fa-trash"></i></span>
+                                        </div>
+                                        <!-- 3nd row  -->
+                                        <div class="align-items-center  d-flex justify-content-between mb-0 px-2 task_row_1">
+                                            <span class=" agenda_sr_no bg-danger rounded-circle text-center text-light">01</span>
+                                            <div class=" w-75">
+                                                    <p class="mb-0 discription  px-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laborum.</p>
+                                            </div>
+                                            <span class=""><i class="fas fa-trash"></i></span>
+                                        </div>
+                                        <!-- 4nd row  -->
+                                        <div class="align-items-center  d-flex justify-content-between mb-0 px-2 task_row_1">
+                                            <span class=" agenda_sr_no bg-danger rounded-circle text-center text-light">01</span>
+                                            <div class=" w-75">
+                                                    <p class="mb-0 discription px-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laborum.</p>
+                                            </div>
+                                            <span class=""><i class="fas fa-trash"></i></span>
+                                        </div>
+                                        <div class="align-items-center  d-flex justify-content-between mb-0 px-2 task_row_1">
+                                            <span class=" agenda_sr_no bg-danger rounded-circle text-center text-light">01</span>
+                                            <div class=" w-75">
+                                                    <p class="mb-0 discription px-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laborum.</p>
+                                            </div>
+                                            <span class=""><i class="fas fa-trash"></i></span>
+                                        </div>
+                                        <div class="align-items-center  d-flex justify-content-between mb-0 px-2 task_row_1">
+                                            <span class=" agenda_sr_no bg-danger rounded-circle text-center text-light">01</span>
+                                            <div class=" w-75">
+                                                    <p class="mb-0 discription px-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laborum.</p>
+                                            </div>
+                                            <span class=""><i class="fas fa-trash"></i></span>
+                                        </div>
+                                        <div class="align-items-center  d-flex justify-content-between mb-0 px-2 task_row_1">
+                                            <span class=" agenda_sr_no bg-danger rounded-circle text-center text-light">01</span>
+                                            <div class=" w-75">
+                                                    <p class="mb-0 discription px-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laborum.</p>
+                                            </div>
+                                            <span class=""><i class="fas fa-trash"></i></span>
+                                        </div>
+                                        <div class="align-items-center  d-flex justify-content-between mb-0 px-2 task_row_1">
+                                            <span class=" agenda_sr_no bg-danger rounded-circle text-center text-light">01</span>
+                                            <div class=" w-75">
+                                                    <p class="mb-0 discription px-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laborum.</p>
+                                            </div>
+                                            <span class=""><i class="fas fa-trash"></i></span>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        
+    </body>
+    <script>
+        $(".fa-trash").click(function(){
+            alert("You want to Delete your data");
+        })
+    </script>
+</html>
