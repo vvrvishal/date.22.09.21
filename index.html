@@ -24,7 +24,8 @@
                     <span> <i class=" aim_logo fas fa-crosshairs"></i></span>
                     <h3 class="text_focus_area">Focus Area</h3>X
                 </div>
-                <span><i class=" plus fas fa-plus"></i></span>
+                <span id='toggle_input'><input type='search' placeholder="search here" style='display:none'  id='open_input' class='form-control'><i class=" plus fas fa-plus" id='open_search'></i></span>
+
             </div>
             <div class="contant_rows">
                 <!-- row 1 -->
@@ -417,6 +418,18 @@
     for (let i = 0; i < rows.length; i++) {
         rows[i].addEventListener("click", view_row_function.bind(this, rows[i]));
     }
+    $("#open_search").click(function(){
+        $("#open_input").toggle('slow');
+    })
+    $(document).mouseup(function(e) {
+            var container = $('#toggle_input');
+
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                $('#toggle_input > #open_input').hide('slow');
+            }
+        });
+
 </script>
 
 </html>
